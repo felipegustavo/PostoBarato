@@ -102,22 +102,101 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-          
-          <div class="row">
-            <div class="col-lg-6 col-lg-offset-3 text-center">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Buscar por estado, cidade ou bairo.">
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">Buscar</button>
-                </span>
-              </div>
+            
+            <hr>
+            <div class="row clearfix">
+                <div class="col-md-1 table-row-column">
+	                <div class="table-row-content">
+		            <div><img title="Bandeira branca" alt="Bandeira branca" width="42" height="42" border="0" class="img-responsive img-rounded pull-right" src="images/branca.png"></div>
+                </div>
             </div>
-          </div>
-          
-          <div class="x_content">
-            <div id="map"></div>
-          </div>
-          
+            <div class="col-md-2 table-row-column">
+	            <div class="table-row-content">
+		            <div>
+			            <h4><a href="/posto/29557/neves-bezerra-comercial-de-combustiveis-ltda">Neves &amp; Bezerra Comercial de Combustíveis Ltda.</a></h4>
+                        <a href="#"><small>Ver no mapa</small></a> | 
+                        <a href="#"><small>Editar preço</small></a>
+		            </div>
+	            </div>
+            </div>
+
+            <div class="col-md-4 table-row-column">
+                <div class="table-row-content">
+                    <div>Rua Tiburcio Magalhães, 69<br>Arapiraca</div>
+                </div>
+            </div>
+
+            <div class="col-md-5 table-row-column">
+	            <div class="table-row-content">
+		            <div>
+                        <div class="col-xs-4 text-center">
+                            <small class=" gasolina">Gasolina</small><br>
+                            <span class="lead gasolina">3.649</span><br>
+                        </div>
+
+                        <div class="col-xs-4 text-center">
+                            <small class=" alcool">Álcool</small><br>
+                            <span class="lead alcool">3.799</span><br>
+                            <br>
+                        </div>
+                        
+                        <div class="col-xs-4 text-center">
+                            <small class=" diesel">Diesel</small><br>
+                            <span class="lead diesel">2.880</span><br>
+                            <small>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <hr>
+            <div class="row clearfix">
+                <div class="col-md-1 table-row-column">
+	                <div class="table-row-content">
+		            <div><img title="Bandeira branca" alt="Bandeira branca" width="42" height="42" border="0" class="img-responsive img-rounded pull-right" src="images/branca.png"></div>
+                </div>
+            </div>
+            <div class="col-md-2 table-row-column">
+	            <div class="table-row-content">
+		            <div>
+			            <h4><a href="/posto/29557/neves-bezerra-comercial-de-combustiveis-ltda">Neves &amp; Bezerra Comercial de Combustíveis Ltda.</a></h4>
+                        <a href="#"><small>Ver no mapa</small></a> | 
+                        <a href="#"><small>Editar preço</small></a>
+		            </div>
+	            </div>
+            </div>
+
+            <div class="col-md-4 table-row-column">
+                <div class="table-row-content">
+                    <div>Rua Tiburcio Magalhães, 69<br>Arapiraca</div>
+                </div>
+            </div>
+
+            <div class="col-md-5 table-row-column">
+	            <div class="table-row-content">
+		            <div>
+                        <div class="col-xs-4 text-center">
+                            <small class=" gasolina">Gasolina</small><br>
+                            <span class="lead gasolina">3.649</span><br>
+                        </div>
+
+                        <div class="col-xs-4 text-center">
+                            <small class=" alcool">Álcool</small><br>
+                            <span class="lead alcool">3.799</span><br>
+                            <br>
+                        </div>
+                        
+                        <div class="col-xs-4 text-center">
+                            <small class=" diesel">Diesel</small><br>
+                            <span class="lead diesel">2.880</span><br>
+                            <small>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                      
         </div>
         <!-- /page content -->
 
@@ -142,17 +221,5 @@
     <script src="vendors/nprogress/nprogress.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="js/custom.js"></script>
-    <!-- GoogleMaps -->
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: -14.235004, lng: -51.92528},
-          zoom: 4
-        });
-      }
-    </script>
   </body>
 </html>
