@@ -334,7 +334,7 @@ body {
   padding: 10px 0;
 }
 .page-title .title_left {
-  width: 45%;
+  width: 100%;
   float: left;
   display: block;
 }
@@ -624,7 +624,8 @@ a:hover, a:focus {
 .toggle {
   float: left;
   margin: 0;
-  padding-top: 16px;
+  padding-top: 10px;
+  padding-bottom: 7px;
   width: 70px;
 }
 .toggle a {
@@ -4697,3 +4698,19 @@ ul.notifications {
   border: 1px solid #e5e5e5;
 }
 /** /Dropzone.js **/
+
+.red{
+  color:red;
+}
+.orange{
+  color:orange;
+}
+.green{
+  color:green;
+}
+
+/* MAPA */
+#map {
+  width:100%;
+  height:350px !important;
+}
