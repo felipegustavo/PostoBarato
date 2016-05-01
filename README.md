@@ -8,3 +8,7 @@
 4. Visualizar postos dos mais caros para os mais baratos: Na pagina inicial será apresentado uma lista ordenada do posto mais barato para o posto mais caro e a ordem também poderá ser invertida. E quando o usuário clicar sobre algum posto da lista o mapa irá dar um zoom para o posto selecionado.
 5. Rota da sua localização até o posto: Será possível visualizar rotas da sua localização para um posto escolhido usando o google maps.
 Gráfico de linha dos preços dos combustíveis: O gráfico irá apresentar a variação dos preços dos combustíveis nos postos.
+
+### Fonte de dados
+
+http://www.meuspostos.com.br/developer/metodos
