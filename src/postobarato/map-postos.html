@@ -126,19 +126,6 @@
                   </div>
                 </div>
               </div>
-
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Localização</h2>
-                    <div class="clearfix"></div>
-                  </div>
-
-                  <div class="x_content">
-                    <div id="map"></div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -165,16 +152,5 @@
     <script src="vendors/nprogress/nprogress.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="js/custom.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: -12.9679001, lng: -38.4903828},
-          zoom: 12
-        });
-      }
-    </script>
   </body>
 </html>
