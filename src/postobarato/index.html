@@ -34,15 +34,15 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-map-marker"></i> Postos <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="index.html">Navegue pelo mapa</a></li>
-                      <li><a href="busca.html">Preços por cidade</a></li>
+                      <li><a href="postos.html">Ver todos</a></li>
+                      <li><a href="busca.html">Procurar postos</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-bar-chart"></i> Estatísticas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="estatistica.html">Geral</a>
                       </li>
-                      <li><a href="pesquisar-estatistica.html">Pesquisar</a>
+                      <li><a href="pesquisar-estatistica.html">Filtrar</a>
                       </li>
                     </ul>
                   </li>
@@ -118,7 +118,7 @@
     <!-- Custom Theme Scripts -->
     <script src="js/custom.js"></script>
     <!-- GoogleMaps -->
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvBCPAwvz_aUKAR3vvUGYQ79rg-SW81j4&callback=initMap"
         async defer></script>
     <script>
       function initMap() {
@@ -126,6 +126,12 @@
         var map = new google.maps.Map(mapDiv, {
           center: {lat: -14.235004, lng: -51.92528},
           zoom: 4
+        });
+        
+        var marker = new google.maps.Marker({
+          position: {lat: -14.235004, lng: -51.92528},
+          map: map,
+          title: "Hello World!"
         });
       }
     </script>
