@@ -33,39 +33,14 @@
               <div class="menu_section">
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-map-marker"></i> Postos <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu pre-scrollable">
-                      <li><a href="cidades.html">Acre</a></li>
-                      <li><a href="cidades.html">Alagoas</a></li>
-                      <li><a href="cidades.html">Amapá</a></li>
-                      <li><a href="cidades.html">Amazonas</a></li>
-                      <li><a href="cidades.html">Bahia</a></li>
-                      <li><a href="cidades.html">Ceará</a></li>
-                      <li><a href="cidades.html">Distrito Federal</a></li>
-                      <li><a href="cidades.html">Espirito Santo</a></li>
-                      <li><a href="cidades.html">Goias</a></li>
-                      <li><a href="cidades.html">Maranhão</a></li>
-                      <li><a href="cidades.html">Mato Grosso</a></li>
-                      <li><a href="cidades.html">Mato Grosso do Sul</a></li>
-                      <li><a href="cidades.html">Minas Gerais</a></li>
-                      <li><a href="cidades.html">Pará</a></li>
-                      <li><a href="cidades.html">Paraíba</a></li>
-                      <li><a href="cidades.html">Paraná</a></li>
-                      <li><a href="cidades.html">Pernambuco</a></li>
-                      <li><a href="cidades.html">Piaupí</a></li>
-                      <li><a href="cidades.html">Rio de Janeiro</a></li>
-                      <li><a href="cidades.html">Rio Grande do Norte</a></li>
-                      <li><a href="cidades.html">Rio Grande do Sul</a></li>
-                      <li><a href="cidades.html">Rondônia</a></li>
-                      <li><a href="cidades.html">Roraima</a></li>
-                      <li><a href="cidades.html">Santa Catarina</a></li>
-                      <li><a href="cidades.html">São Paulo</a></li>
-                      <li><a href="cidades.html">Sergipe</a></li>
-                      <li><a href="cidades.html">Tocantins</a></li>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">Navegue pelo mapa</a></li>
+                      <li><a href="busca.html">Preços por cidade</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-bar-chart"></i> Estatísticas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="estatistica.html">Brasil</a>
+                      <li><a href="estatistica.html">Geral</a>
                       </li>
                       <li><a href="estatistica.html">Por estado</a>
                       </li>
@@ -102,16 +77,48 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-           <h3>Cidade</h3>
-           <br>
-           <div class="list-group">
-               <a href="postos-cidade.html" class="list-group-item">Cras justo odio</a>
-               <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-               <a href="#" class="list-group-item">Morbi leo risus</a>
-               <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-               <a href="#" class="list-group-item">Vestibulum at eros</a>
-          </div>
-          <br>
+           <div class="page-title">
+              <div class="title_left">
+                <h3><b>Busque por cidade</b></h3><br>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Veja o preço dos combustíveis de sua cidade</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <br />
+                    <form id="busca" data-parsley-validate class="form-horizontal form-label-left">
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Estado <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <select id="estado" name="estado" class="form-control" required></select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Cidade <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <select id="cidade" name="cidade" class="form-control" required></select>
+                        </div>
+                      </div>
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <a href="postos.html" class="btn btn-primary btn-block">Buscar</a>
+                          <!--<button type="submit" class="btn btn-primary btn-block">Buscar</button>-->
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
         <!-- /page content -->
 
@@ -136,5 +143,15 @@
     <script src="vendors/nprogress/nprogress.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="js/custom.js"></script>
+    <script src="js/cidades-estados.js" charset="ISO-8859-1"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+          new dgCidadesEstados( 
+              document.getElementById('estado'), 
+              document.getElementById('cidade'), 
+              true
+          );
+      }
+    </script>
   </body>
 </html>
