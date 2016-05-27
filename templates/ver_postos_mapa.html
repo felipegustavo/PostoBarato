@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="right_col" role="main" >
+  <div class="">
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2>Postos na cidade de {{ dados.cidade }}</small></h2>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+            <section class="content invoice">
+              <div id="map" style="width:1000px; height:800px;"></div>
+              
+              <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvBCPAwvz_aUKAR3vvUGYQ79rg-SW81j4&callback=initMap" async></script>
+              <script type="text/javascript">
+
+                var map;
+                var markers;
+
+                function createMarker(id, nome, endereco, lat, lng, bandeira, gasolina, alcool, diesel) {
+                  var marker = new google.maps.Marker({
+                    position: {lat: lat, lng: lng},
+                    map: map,
+                    title: nome
+                  });
+                }
+
+                function initMap() {
+                  var mapDiv = document.getElementById('map');
+                  map = new google.maps.Map(mapDiv, {
+                    center: {lat:{{dados.centro.lat}}, lng:{{dados.centro.lng}}},
+                    zoom: 12
+                  });
+
+                    
+
+                  {% for p in dados.postos %}
+                  createMarker({{p.id}}, "{{p.nome}}", "{{p.endereco}}", {{p.lat}}, {{p.lng}}, "{{p.bandeira}}", {{p.Gasolina}}, {{p.Alcool}}, {{p.Diesel}});
+                  {% endfor %}
+                }
+
+              </script>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="right_col" role="main" >
+  <div class="">
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2>Sobre o Posto Barato</small></h2>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+
+            <section class="content invoice">
+              <!-- title row -->
+              <div class="row">
+                <div class="col-xs-12 invoice-header">
+                  <h1>
+                    <img class="img-fuel-gray" src="{{ url_for('static', filename='images/fuel-gray.png') }}"> Posto Barato
+                  </h1>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- info row -->
+              <div class="row invoice-info">
+                <div class="col-sm-12 invoice-col">
+                  <br><h4 style="text-align:justify">Posto Barato é uma ferramenta usada para mapear os postos de gasolina da cidade de Salvador. Através desse mapeamento é possível ver os postos da cidade e também o preço dos combustíveis nesses postos.<br><br>
+                  A principal motivação dessa aplicação é permitir que o usuário possa economizar. Tarefa essa antes que requeria um trabalho mais árduo e uma pesquisa na região pode ser feito facilmente, de forma simples e rápida.<br><br> 
+                  E como consequencia seguinte, essa aplicação pode estimular uma maior concorrência de preço entre os postos e preços mais baixo. Com esse tipo de mecanismo de consulta a mão o usuário irá pensar duas vezes antes de abastecer e também os donos dos postos antes de estabalecerem seus preços.<br><br>
+                  Analisando do ponto de vista dos turistas e pessoas novas na cidade essa aplicação é ainda mais útil, pois por não conhece a cidade direito eles acabam optando pela primeira coisa que encontram. E por fim essa aplicação supri a carência de uma aplicação com esse objetivo para a cidade de Salvador.</h4>
+                </div>
+              </div>
+              <!-- /.row -->
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

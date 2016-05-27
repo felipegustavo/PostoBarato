@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="right_col" role="main" >
+  <div class="">
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2>Lista de postos em {{ dados.capital }}</small></h2>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+            <section class="content invoice">
+              <table border="2" align="center">
+                <tr>
+                  <td>Nome</td>
+                  <td>Endereço</td>
+                  <td>Bandeira</td>
+                  <td>Gasolina</td>
+                  <td>Alcool</td>
+                  <td>Diesel</td> 
+                </tr>
+                {% for p in dados.postos %}
+                <tr>
+                  <td>{{p.nome}}</td>
+                  <td>{{p.endereco}}</td>
+                  <td>{{p.bandeira}}</td>
+                  <td>{{p.Gasolina}} {{p.dataGasolina}}</td>
+                  <td>{{p.Alcool}} {{p.dataAlcool}}</td>
+                  <td>{{p.Diesel}} {{p.dataDiesel}}</td>
+                </tr>
+                {% endfor %}
+              </table>            
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
