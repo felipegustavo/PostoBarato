@@ -34,7 +34,7 @@
                   });
 
                   {% for p in dados.postos %}
-                  var content_window_{{p.id}} = '<img src="'+get_bandeira("{{p.bandeira}}")+'" width="42" height="42" class="pull-right" />'+ 
+                  var content_window_{{p.id}} = '<img src="'+get_bandeira("{{p.bandeira}}")+'" class="pull-right" />'+ 
 												'<h4>{{p.nome}}</h4>{{p.endereco}}<br/>'+
 												'<div style="clearfix"></div><br/><div class="row">'+
 													'<div class="col-xs-4 text-center"><small class="gasolina">Gasolina</small><br/>'+
