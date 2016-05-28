@@ -17,28 +17,53 @@
               <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvBCPAwvz_aUKAR3vvUGYQ79rg-SW81j4&callback=initMap" async></script>
               <script type="text/javascript">
 
-                var map;
-                var markers;
-
-                function createMarker(id, nome, endereco, lat, lng, bandeira, gasolina, alcool, diesel) {
-                  var marker = new google.maps.Marker({
-                    position: {lat: lat, lng: lng},
-                    map: map,
-                    title: nome
-                  });
-                }
+              	function get_bandeira(bandeira) {
+              		if(bandeira == "") {
+              			return "{{ url_for('static', filename='images/bandeiras/pump.png') }}";
+              		} else {
+              			return "{{url_for('static', filename='images/bandeiras/')}}"+bandeira;
+              		}
+              	}
 
                 function initMap() {
+                 
                   var mapDiv = document.getElementById('map');
-                  map = new google.maps.Map(mapDiv, {
+                  var map = new google.maps.Map(mapDiv, {
                     center: {lat:{{dados.centro.lat}}, lng:{{dados.centro.lng}}},
                     zoom: 12
                   });
 
-                    
-
                   {% for p in dados.postos %}
-                  createMarker({{p.id}}, "{{p.nome}}", "{{p.endereco}}", {{p.lat}}, {{p.lng}}, "{{p.bandeira}}", {{p.Gasolina}}, {{p.Alcool}}, {{p.Diesel}});
+                  var content_window_{{p.id}} = '<img src="'+get_bandeira("{{p.bandeira}}")+'" width="42" height="42" class="pull-right" />'+ 
+												'<h4>{{p.nome}}</h4>{{p.endereco}}<br/>'+
+												'<div style="clearfix"></div><br/><div class="row">'+
+													'<div class="col-xs-4 text-center"><small class="gasolina">Gasolina</small><br/>'+
+														'<span class="lead gasolina">{{p.Gasolina}}</span><br/>'+
+														'<small>{{p.dataGasolina}}</small>'+
+													'</div>'+
+													'<div class="col-xs-4 text-center">'+
+														'<small class="alcool">Álcool</small><br/>'+
+														'<span class="lead alcool">{{p.Alcool}}</span><br/>'+
+														'<small>{{p.dataAlcool}}</small>'+
+													'</div>'+
+													'<div class="col-xs-4 text-center">'+
+														'<small class="diesel">Diesel</small><br/>'+
+														'<span class="lead diesel">{{p.Diesel}}</span><br/>'+
+														'<small>{{p.dataDiesel}}</small>'+
+													'</div>'+
+												'</div>';
+
+                  var info_window_{{p.id}} = new google.maps.InfoWindow({
+                  	content: content_window_{{p.id}}
+                  })
+                  var marker_{{p.id}} = new google.maps.Marker({
+                    position: {lat: {{p.lat}}, lng: {{p.lng}}},
+                    map: map,
+                    title: "{{p.nome}}"
+                  });
+                  marker_{{p.id}}.addListener('click', function(){
+                  	info_window_{{p.id}}.open(map, marker_{{p.id}});
+                  })
                   {% endfor %}
                 }
 

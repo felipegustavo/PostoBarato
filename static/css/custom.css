@@ -4,6 +4,31 @@
   margin-top:-2px;
   margin-left:17px;
 }
+
+.bg-alcool {
+	background-color: rgb(96, 127, 3);
+}
+
+.bg-gasolina {
+	background-color: rgb(231, 2, 2);
+}
+
+.bg-diesel {
+	background-color: rgb(255, 153, 0);
+}
+
+.alcool {
+	color: rgb(96, 127, 3);
+}
+
+.gasolina {
+	color: rgb(231, 2, 2);
+}
+
+.diesel {
+	color: rgb(255, 153, 0);
+}
+
 .logo-postos{
   width:20px;
   margin-right: 6px;
