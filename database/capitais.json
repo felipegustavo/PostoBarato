@@ -10,7 +10,27 @@
 		},
 		{
 			"id":"maceio",
-			"rotulo":"Maceió - Alágoas"
+			"rotulo":"Maceió - Alagoas"
+		},
+		{
+			"id":"manaus",
+			"rotulo":"Manaus - Amazonas"
+		},
+		{
+			"id":"fortaleza",
+			"rotulo":"Fortaleza - Ceará"
+		},
+		{
+			"id":"macapa",
+			"rotulo":"Macapá - Amapá"
+		},
+		{
+			"id":"brasilia",
+			"rotulo":"Brasília - Distrito Federal"
+		},
+		{
+			"id":"vitoria",
+			"rotulo":"Vitória - Espírito Santo"
 		}
 	]
 }
