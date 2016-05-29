@@ -54,7 +54,7 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <canvas id="lineChart"></canvas>
+                    <canvas id="gasolina-lineChart"></canvas>
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <canvas id="mybarChart"></canvas>
+                    <canvas id="gasolina-mybarChart"></canvas>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <canvas id="lineChart"></canvas>
+                    <canvas id="alcool-lineChart"></canvas>
                   </div>
                 </div>
               </div>
@@ -136,7 +136,7 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <canvas id="mybarChart"></canvas>
+                    <canvas id="alcool-mybarChart"></canvas>
                   </div>
                 </div>
               </div>
@@ -194,7 +194,7 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <canvas id="lineChart"></canvas>
+                    <canvas id="diesel-lineChart"></canvas>
                   </div>
                 </div>
               </div>
@@ -206,7 +206,7 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <canvas id="mybarChart"></canvas>
+                    <canvas id="diesel-mybarChart"></canvas>
                   </div>
                 </div>
               </div>
@@ -225,12 +225,12 @@
         enabled: false
       };
 
-      // Line chart
-      var ctx = document.getElementById("lineChart");
+      // Line chart gasolina
+      var ctx = document.getElementById("gasolina-lineChart");
       var lineChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
           datasets: [{
             label: "My First dataset",
             backgroundColor: "rgba(38, 185, 154, 0.31)",
@@ -255,8 +255,8 @@
         },
       });
 
-      // Bar chart
-      var ctx = document.getElementById("mybarChart");
+      // Bar chart gasolina
+      var ctx = document.getElementById("gasolina-mybarChart");
       var mybarChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -287,34 +287,128 @@
         }
       });
 
-      // Doughnut chart
-      var ctx = document.getElementById("canvasDoughnut");
-      var data = {
-        labels: [
-          "Gasolina",
-          "Álcool",
-          "Diesel",
-        ],
-        datasets: [{
-          data: [120, 50, 140],
-          backgroundColor: [
-            "#F95757",
-            "#1BC81B",
-            "#F90"
-          ],
-          hoverBackgroundColor: [
-            "#F95757",
-            "#1BC81B",
-            "#F90"
-          ]
+      // Line chart alcool
+      var ctx = document.getElementById("alcool-lineChart");
+      var lineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          datasets: [{
+            label: "My First dataset",
+            backgroundColor: "rgba(38, 185, 154, 0.31)",
+            borderColor: "rgba(38, 185, 154, 0.7)",
+            pointBorderColor: "rgba(38, 185, 154, 0.7)",
+            pointBackgroundColor: "rgba(38, 185, 154, 0.7)",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointBorderWidth: 1,
+            data: [31, 74, 6, 39, 20, 85, 7]
+          }, {
+            label: "My Second dataset",
+            backgroundColor: "rgba(3, 88, 106, 0.3)",
+            borderColor: "rgba(3, 88, 106, 0.70)",
+            pointBorderColor: "rgba(3, 88, 106, 0.70)",
+            pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(151,187,205,1)",
+            pointBorderWidth: 1,
+            data: [82, 23, 66, 9, 99, 4, 2]
+          }]
+        },
+      });
 
-        }]
-      };
+      // Bar chart alcool
+      var ctx = document.getElementById("alcool-mybarChart");
+      var mybarChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          datasets: [{
+            label: 'Gasolina',
+            backgroundColor: "#F95757",
+            data: [51, 30, 40, 28, 92, 50, 45]
+          }, {
+            label: 'Álcool',
+            backgroundColor: "#1BC81B",
+            data: [41, 56, 25, 48, 72, 34, 12]
+          }, {
+            label: 'Diesel',
+            backgroundColor: "#F90",
+            data: [41, 56, 25, 48, 72, 34, 12]
+          }]
+        },
 
-      var canvasDoughnut = new Chart(ctx, {
-        type: 'doughnut',
-        tooltipFillColor: "rgba(51, 51, 51, 0.55)",
-        data: data
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
+      });
+
+      // Line chart diesel
+      var ctx = document.getElementById("diesel-lineChart");
+      var lineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          datasets: [{
+            label: "My First dataset",
+            backgroundColor: "rgba(38, 185, 154, 0.31)",
+            borderColor: "rgba(38, 185, 154, 0.7)",
+            pointBorderColor: "rgba(38, 185, 154, 0.7)",
+            pointBackgroundColor: "rgba(38, 185, 154, 0.7)",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointBorderWidth: 1,
+            data: [31, 74, 6, 39, 20, 85, 7]
+          }, {
+            label: "My Second dataset",
+            backgroundColor: "rgba(3, 88, 106, 0.3)",
+            borderColor: "rgba(3, 88, 106, 0.70)",
+            pointBorderColor: "rgba(3, 88, 106, 0.70)",
+            pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(151,187,205,1)",
+            pointBorderWidth: 1,
+            data: [82, 23, 66, 9, 99, 4, 2]
+          }]
+        },
+      });
+
+      // Bar chart diesel
+      var ctx = document.getElementById("diesel-mybarChart");
+      var mybarChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          datasets: [{
+            label: 'Gasolina',
+            backgroundColor: "#F95757",
+            data: [51, 30, 40, 28, 92, 50, 45]
+          }, {
+            label: 'Álcool',
+            backgroundColor: "#1BC81B",
+            data: [41, 56, 25, 48, 72, 34, 12]
+          }, {
+            label: 'Diesel',
+            backgroundColor: "#F90",
+            data: [41, 56, 25, 48, 72, 34, 12]
+          }]
+        },
+
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
       });
     </script>
     <!-- /Chart.js -->
