@@ -12,3 +12,18 @@ Gráfico de linha dos preços dos combustíveis: O gráfico irá apresentar a va
 ## Fonte de dados
 
 http://www.meuspostos.com.br/developer/metodos
+
+## Como rodar a aplicação
+
+1) Criando um ambiente de virtualização:
+virtualenv .env
+
+2) Ativando o ambiente:
+source .env/bin/activate
+
+3) Instalando os pacotes necessários:
+pip install -r requirements.txt
+
+4) Executar a aplicação:
+python src/run.py
+
