@@ -13,6 +13,10 @@ Gráfico de linha dos preços dos combustíveis: O gráfico irá apresentar a va
 
 http://www.meuspostos.com.br/developer/metodos
 
+## Dependências para instalar
+
+apt-get install virtualenv 
+
 ## Como rodar a aplicação
 
 1) Criando um ambiente de virtualização:
