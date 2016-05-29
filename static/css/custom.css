@@ -18,11 +18,11 @@
 }
 
 .alcool {
-	color: rgb(96, 127, 3);
+	color: #1BC81B;
 }
 
 .gasolina {
-	color: rgb(231, 2, 2);
+	color: #F95757;
 }
 
 .diesel {
@@ -876,9 +876,9 @@ h2 {
   margin: 5px 0 6px;
   float: left;
   display: block;
-  text-overflow: ellipsis;
+  /*text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap;*/
 }
 .x_title h2 small {
   margin-left: 10px;

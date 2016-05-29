@@ -2,19 +2,18 @@
 {% block body %}
 <div class="right_col" role="main" >
   <div class="">
-    <div class="clearfix"></div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
           <div class="x_title">
             <h2>Lista de postos em {{ dados.cidade }}</small></h2>
             <div class="clearfix"></div>
           </div>
           <div class="x_content">
-            <section class="content invoice">
-              <table id="tabela_postos" class="tablesorter">
+            <div class="table-responsive">
+              <table id="tabela_postos" class="tablesorter table table-striped jambo_table bulk_action">
                 <thead>
-                  <tr>
+                  <tr class="headings">
                     <th>Bandeira</th>
                     <th>Posto</th>
                     <th class="gasolina">Gasolina</th>
@@ -23,7 +22,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  {% for p in dados.postos %}
+                  {% for p in dados.postos | sort(attribute='Gasolina') %}
                   <tr>
                     <td>
                       {% if p.bandeira is defined %}
@@ -33,19 +32,30 @@
                       {% endif %}
                     </td>
                     <td>{{p.nome}}</td>                  
-                    <td class="gasolina">{{p.Gasolina}}</td>
-                    <td class="alcool">{{p.Alcool}}</td>
-                    <td class="diesel">{{p.Diesel}}</td>
+                    <td class="gasolina"><b>{{p.Gasolina}}</b></td>
+                    <td class="alcool"><b>{{p.Alcool}}</b></td>
+                    <td class="diesel"><b>{{p.Diesel}}</b></td>
                   </tr>
                   {% endfor %}
                 </tbody>
               </table>            
-            </section>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+{% endblock %}
 
+{% block js %}
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#tabela_postos").tablesorter({
+      headers: {
+        0: {sorter: false}
+      }
+    });
+  });
+</script>
 {% endblock %}
