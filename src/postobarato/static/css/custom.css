@@ -6,15 +6,18 @@
 }
 
 .bg-alcool {
-	background-color: rgb(96, 127, 3);
+	background-color: rgb(96, 127, 3) !important;
+  color:white;
 }
 
 .bg-gasolina {
-	background-color: rgb(231, 2, 2);
+	background-color: rgb(231, 2, 2) !important;
+  color:white;
 }
 
 .bg-diesel {
-	background-color: rgb(255, 153, 0);
+	background-color: rgb(255, 153, 0) !important;
+  color:white;
 }
 
 .alcool {

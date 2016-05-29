@@ -2,30 +2,46 @@
 {% block body %}
         <div class="right_col" role="main">
           <div class="">
+            <!-- GASOLINA -->
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel bg-gasolina">
+                  <h2><b>GASOLINA</b></h2>
+                </div>
+              </div>
+            </div>
+
             <div class="row top_tiles">
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
-                  <div class="icon"><i class="fa fa-fire"></i>
+                  <div class="icon"><i class="fa fa-sort-numeric-asc"></i>
                   </div>
-                  <div class="count">193</div>
-                  <h3>Postos</h3>
+                  <div class="count">R$3,255</div>
+                  <h3>Média</h3>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-line-chart"></i>
+                  </div>
+                  <div class="count">R$0,245</div>
+                  <h3>Desvio</h3>
                 </div>
               </div>
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-level-down"></i>
                   </div>
-                  <div class="count">R$3,20</div>
-                  <h3>Menor preço</h3>
+                  <div class="count">R$2,419</div>
+                  <h3>Mínimo</h3>
                 </div>
               </div>
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-level-up"></i>
                   </div>
-                  <div class="count">R$4,20</div>
-
-                  <h3>Maior preço</h3>
+                  <div class="count">R$4,519</div>
+                  <h3>Máximo</h3>
                 </div>
               </div>
             </div>
@@ -34,7 +50,7 @@
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Line graph</h2>
+                    <h2>Histórico dos preços</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -46,23 +62,147 @@
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Gasolina / Álcool / Diesel</h2>
+                    <h2>Histograma de distribuição dos preços</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <canvas id="canvasDoughnut"></canvas>
+                    <canvas id="mybarChart"></canvas>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="clearfix"></div>
-
+            <!-- ÁLCOOL -->
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel bg-alcool">
+                  <h2><b>ÁLCOOL</b></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row top_tiles">
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-sort-numeric-asc"></i>
+                  </div>
+                  <div class="count">R$3,255</div>
+                  <h3>Média</h3>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-line-chart"></i>
+                  </div>
+                  <div class="count">R$0,245</div>
+                  <h3>Desvio</h3>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-level-down"></i>
+                  </div>
+                  <div class="count">R$2,419</div>
+                  <h3>Mínimo</h3>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-level-up"></i>
+                  </div>
+                  <div class="count">R$4,519</div>
+                  <h3>Máximo</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Média de preço dos últimos 6 meses</h2>
+                    <h2>Histórico dos preços</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <canvas id="lineChart"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Histograma de distribuição dos preços</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <canvas id="mybarChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DIESEL -->
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel bg-diesel">
+                  <h2><b>DIESEL</b></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row top_tiles">
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-sort-numeric-asc"></i>
+                  </div>
+                  <div class="count">R$3,255</div>
+                  <h3>Média</h3>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-line-chart"></i>
+                  </div>
+                  <div class="count">R$0,245</div>
+                  <h3>Desvio</h3>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-level-down"></i>
+                  </div>
+                  <div class="count">R$2,419</div>
+                  <h3>Mínimo</h3>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-level-up"></i>
+                  </div>
+                  <div class="count">R$4,519</div>
+                  <h3>Máximo</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Histórico dos preços</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <canvas id="lineChart"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Histograma de distribuição dos preços</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
