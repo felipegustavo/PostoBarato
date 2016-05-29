@@ -1,8 +1,16 @@
 {
 	"capitais": [
 		{
-			"id": "salvador",
-			"rotulo": "Salvador - Bahia"
+			"id":"salvador",
+			"rotulo":"Salvador - Bahia"
+		},
+		{
+			"id":"rio_branco",
+			"rotulo":"Rio Branco - Acre"
+		},
+		{
+			"id":"maceio",
+			"rotulo":"Maceió - Alágoas"
 		}
 	]
 }
