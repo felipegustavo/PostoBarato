@@ -1,0 +1,184 @@
+{
+	"resumos":[
+		{
+			"periodo":"Maio 2016",
+			"data": "2016-06-01",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+					"numero_postos":17074,
+					"preco_medio": 3.68,
+					"desvio_padrao":0.228,
+					"preco_min":3.047,
+					"preco_maximo":4.89
+				},
+				{
+					"nome":"Diesel",
+					"numero_postos":17074,
+					"preco_medio": 3.019,
+					"desvio_padrao":0.169,
+					"preco_min":2.539,
+					"preco_maximo":3.98
+				},
+				{
+					"nome":"Álcool",
+					"numero_postos":15635,
+					"preco_medio": 2.505,
+					"desvio_padrao":0.475,
+					"preco_min":1.597,
+					"preco_maximo":4.296
+				}
+			]
+		},
+		{
+			"periodo":"Abril 2016",
+			"data": "2016-05-01",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+					"numero_postos":22743,
+					"preco_medio": 3.717,
+					"desvio_padrao":0.219,
+					"preco_min":3.059,
+					"preco_maximo":4.89
+				},
+				{
+					"nome":"Diesel",
+					"numero_postos":14870,
+					"preco_medio": 3.021,
+					"desvio_padrao":0.171,
+					"preco_min":2.64,
+					"preco_maximo":3.98
+				},
+				{
+					"nome":"Álcool",
+					"numero_postos":20839,
+					"preco_medio": 2.741,
+					"desvio_padrao":0.406,
+					"preco_min":1.859,
+					"preco_maximo":4.296
+				}
+			]
+		},
+		{
+			"periodo":"Março 2016",
+			"data": "2016-04-01",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+					"numero_postos":26434,
+					"preco_medio": 3.73,
+					"desvio_padrao":0.21,
+					"preco_min":3.179,
+					"preco_maximo":4.84
+				},
+				{
+					"nome":"Diesel",
+					"numero_postos":17219,
+					"preco_medio": 3.02,
+					"desvio_padrao":0.166,
+					"preco_min":2.499,
+					"preco_maximo":3.98
+				},
+				{
+					"nome":"Álcool",
+					"numero_postos":24029,
+					"preco_medio": 2.869,
+					"desvio_padrao":0.326,
+					"preco_min":2.259,
+					"preco_maximo":4.296
+				}
+			]
+		},
+		{
+			"periodo":"Fevereiro 2016",
+			"data": "2016-03-01",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+					"numero_postos":24756,
+					"preco_medio": 3.71,
+					"desvio_padrao":0.206,
+					"preco_min":3.109,
+					"preco_maximo":4.799
+				},
+				{
+					"nome":"Diesel",
+					"numero_postos":16325,
+					"preco_medio": 3.017,
+					"desvio_padrao":0.165,
+					"preco_min":2.499,
+					"preco_maximo":3.9
+				},
+				{
+					"nome":"Álcool",
+					"numero_postos":22689,
+					"preco_medio": 2.808,
+					"desvio_padrao":0.311,
+					"preco_min":2.199,
+					"preco_maximo":4.296
+				}
+			]
+		},
+		{
+			"periodo":"Janeiro 2016",
+			"data": "2016-02-01",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+					"numero_postos":22761,
+					"preco_medio": 3.676,
+					"desvio_padrao":0.204,
+					"preco_min":3.149,
+					"preco_maximo":4.799
+				},
+				{
+					"nome":"Diesel",
+					"numero_postos":14961,
+					"preco_medio": 3.003,
+					"desvio_padrao":0.16,
+					"preco_min":2.46,
+					"preco_maximo":3.95
+				},
+				{
+					"nome":"Álcool",
+					"numero_postos":20842,
+					"preco_medio": 2.718,
+					"desvio_padrao":0.304,
+					"preco_min":2.179,
+					"preco_maximo":3.955
+				}
+			]
+		},
+		{
+			"periodo":"Dezembro 2015",
+			"data": "2016-01-01",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+					"numero_postos":24507,
+					"preco_medio": 3.633,
+					"desvio_padrao":0.191,
+					"preco_min":3.079,
+					"preco_maximo":4.719
+				},
+				{
+					"nome":"Diesel",
+					"numero_postos":15743,
+					"preco_medio": 2.985,
+					"desvio_padrao":0.157,
+					"preco_min":2.489,
+					"preco_maximo":3.95
+				},
+				{
+					"nome":"Álcool",
+					"numero_postos":22409,
+					"preco_medio": 2.659,
+					"desvio_padrao":0.275,
+					"preco_min":2.13,
+					"preco_maximo":3.85
+				}
+			]
+		}
+	]
+}
