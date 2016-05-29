@@ -2,6 +2,28 @@
 {% block body %}
         <div class="right_col" role="main">
           <div class="">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <form id="busca-estatistica" data-parsley-validate class="form-horizontal form-label-left" action="">
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Locais <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <select id="local" name="local" class="form-control" required="true">
+                          <option value="Brasil">Brasil</option>
+                          {% for capital in capitais %}
+                          <option value="{{ capital.id }}">{{ capital.rotulo }}</option>
+                          {% endfor %}
+                        </select><br>
+                        <button type="submit" class="btn btn-primary btn-block">Montar estatísticas</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
             <!-- GASOLINA -->
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
