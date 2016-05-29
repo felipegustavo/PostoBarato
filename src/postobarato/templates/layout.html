@@ -45,7 +45,7 @@
               <div class="menu_section">
                 <ul class="nav side-menu">
                   <li><a href="{{ url_for('mod_busca.busca_postos') }}"><i class="fa fa-map-marker"></i>Postos</a></li>
-                  <li><a><i class="fa fa-bar-chart"></i>Estatísticas</a></li>
+                  <li><a href="{{ url_for('mod_estatisticas.estatisticas') }}"><i class="fa fa-bar-chart"></i>Estatísticas</a></li>
                   <li><a href="{{ url_for('mod_contato.contato') }}"><i class="fa fa-bullhorn"></i>Contato</span></a></li>
                   <li><a href="{{ url_for('mod_sobre.sobre') }}"><i class="fa fa-question-circle"></i>Sobre</span></a></li>
                 </ul>
@@ -94,7 +94,6 @@
     <script src="{{ url_for('static', filename='vendors/tablesorter/jquery.tablesorter.js') }}"></script>
     <!-- Custom Theme Scripts -->
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
-
     {% block js %}{% endblock %}
   </body>
 </html>
