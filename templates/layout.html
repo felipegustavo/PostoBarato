@@ -5,7 +5,8 @@
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/fuel-gray.png') }}">
 
     <title>Posto Barato</title>
 
@@ -46,6 +47,7 @@
                   <li><a href="{{ url_for('busca_postos') }}"><i class="fa fa-map-marker"></i>Postos</a></li>
                   <li><a><i class="fa fa-bar-chart"></i>Estatísticas</a></li>
                   <li><a href="{{ url_for('contato') }}"><i class="fa fa-bullhorn"></i>Contato</span></a></li>
+                  <li><a href="{{ url_for('sobre') }}"><i class="fa fa-question-circle"></i>Sobre</span></a></li>
                 </ul>
               </div>
             </div>
@@ -55,7 +57,6 @@
 
         <!-- top navigation -->
         <div class="top_nav">
-
           <div class="nav_menu">
             <nav class="" role="navigation">
               <div class="nav toggle">
@@ -63,7 +64,6 @@
               </div>
             </nav>
           </div>
-
         </div>
         <!-- /top navigation -->
 
@@ -94,16 +94,7 @@
     <script src="{{ url_for('static', filename='vendors/tablesorter/jquery.tablesorter.js') }}"></script>
     <!-- Custom Theme Scripts -->
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
-  
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $("#tabela_postos").tablesorter({
-          headers: {
-            0: {sorter: false}
-          }
-        });
-      });
-  </script>
 
+    {% block js %}{% endblock %}
   </body>
 </html>
