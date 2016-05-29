@@ -1,0 +1,88 @@
+{
+	"resumos":[
+		{
+			"periodo":"Maio 2016",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+				},
+				{
+					"nome":"Álcool",
+				},
+				{
+					"nome":"Diesel",
+				}
+			]
+		},
+		{
+			"periodo":"Abril 2016",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+				},
+				{
+					"nome":"Álcool",
+				},
+				{
+					"nome":"Diesel",
+				}
+			]
+		},
+		{
+			"periodo":"Março 2016",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+				},
+				{
+					"nome":"Álcool",
+				},
+				{
+					"nome":"Diesel",
+				}
+			]
+		},
+		{
+			"periodo":"Fevereiro 2016",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+				},
+				{
+					"nome":"Álcool",
+				},
+				{
+					"nome":"Diesel",
+				}
+			]
+		},
+		{
+			"periodo":"Janeiro 2016",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+				},
+				{
+					"nome":"Álcool",
+				},
+				{
+					"nome":"Diesel",
+				}
+			]
+		},
+		{
+			"periodo":"Dezembro 2015",
+			"produtos":[
+				{
+					"nome":"Gasolina",
+				},
+				{
+					"nome":"Álcool",
+				},
+				{
+					"nome":"Diesel",
+				}
+			]
+		}
+	]
+}

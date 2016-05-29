@@ -2,7 +2,6 @@
 	"resumos":[
 		{
 			"periodo":"Maio 2016",
-			"data": "2016-06-01",
 			"produtos":[
 				{
 					"nome":"Gasolina",
@@ -32,7 +31,6 @@
 		},
 		{
 			"periodo":"Abril 2016",
-			"data": "2016-05-01",
 			"produtos":[
 				{
 					"nome":"Gasolina",
@@ -62,7 +60,6 @@
 		},
 		{
 			"periodo":"Março 2016",
-			"data": "2016-04-01",
 			"produtos":[
 				{
 					"nome":"Gasolina",
@@ -92,7 +89,6 @@
 		},
 		{
 			"periodo":"Fevereiro 2016",
-			"data": "2016-03-01",
 			"produtos":[
 				{
 					"nome":"Gasolina",
@@ -122,7 +118,6 @@
 		},
 		{
 			"periodo":"Janeiro 2016",
-			"data": "2016-02-01",
 			"produtos":[
 				{
 					"nome":"Gasolina",
@@ -152,7 +147,6 @@
 		},
 		{
 			"periodo":"Dezembro 2015",
-			"data": "2016-01-01",
 			"produtos":[
 				{
 					"nome":"Gasolina",
