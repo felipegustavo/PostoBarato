@@ -1,0 +1,116 @@
+{
+	"estatisticas": [
+		{
+			"id":"brasil",
+			"rotulo":"Brasil"
+		},
+		{
+			"id":"acre",
+			"rotulo":"Acre"
+		},
+		{
+			"id":"alagoas",
+			"rotulo":"Alagoas"
+		},
+		{
+			"id":"amapa",
+			"rotulo":"Amapá"
+		},
+		{
+			"id":"amazonas",
+			"rotulo":"Amazonas"
+		},
+		{
+			"id":"bahia",
+			"rotulo":"Bahia"
+		},
+		{
+			"id":"ceara",
+			"rotulo":"Ceará"
+		},
+		{
+			"id":"distrito_federal",
+			"rotulo":"Distrito Federal"
+		},
+		{
+			"id":"espirito_santo",
+			"rotulo":"Espírito Santo"
+		},
+		{
+			"id":"goias",
+			"rotulo":"Goiás"
+		},
+		{
+			"id":"maranhao",
+			"rotulo":"Maranhão"
+		},
+		{
+			"id":"mato_grosso",
+			"rotulo":"Mato Grosso"
+		},
+		{
+			"id":"mato_grosso_sul",
+			"rotulo":"Mato Grosso do Sul"
+		},
+		{
+			"id":"minas_gerais",
+			"rotulo":"Minas Gerais"
+		},
+		{
+			"id":"para",
+			"rotulo":"Pará"
+		},
+		{
+			"id":"paraiba",
+			"rotulo":"Paraíba"
+		},
+		{
+			"id":"parana",
+			"rotulo":"Paraná"
+		},
+		{
+			"id":"pernambuco",
+			"rotulo":"Pernambuco"
+		},
+		{
+			"id":"piaui",
+			"rotulo":"Piauí"
+		},
+		{
+			"id":"rio_janeiro",
+			"rotulo":"Rio de Janeiro"
+		},
+		{
+			"id":"rio_grande_norte",
+			"rotulo":"Rio Grande do Norte"
+		},
+		{
+			"id":"rio_grande_sul",
+			"rotulo":"Rio Grande do Sul"
+		},
+		{
+			"id":"rondonia",
+			"rotulo":"Rondônia"
+		},
+		{
+			"id":"roraima",
+			"rotulo":"Roraima"
+		},
+		{
+			"id":"santa_catarina",
+			"rotulo":"Santa Catarina"
+		},
+		{
+			"id":"sao_paulo",
+			"rotulo":"São Paulo"
+		},
+		{
+			"id":"sergipe",
+			"rotulo":"Sergipe"
+		},
+		{
+			"id":"tocantins",
+			"rotulo":"Tocantins"
+		}
+	]
+}
