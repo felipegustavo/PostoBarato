@@ -42,7 +42,7 @@
 
     {% for p in dados.postos %}
     var content_window_{{p.id}} = '<img src="'+get_bandeira("{{p.bandeira}}")+'" class="pull-right" />'+ 
-      '<h4>{{p.nome}}</h4>{{p.endereco}}<br/>'+
+      '<h4>{{p.nome}}</h4>{{p.endereco}} <a href="{{url_for('mod_rota.rota')}}?nome={{p.nome}}&lat={{p.lat}}&lng={{p.lng}}">(ver rota)</a><br/>'+
       '<div style="clearfix"></div><br/><div class="row">'+
         '<div class="col-xs-4 text-center"><small class="gasolina">Gasolina</small><br/>'+
           '<span class="lead gasolina">{{p.Gasolina}}</span><br/>'+
