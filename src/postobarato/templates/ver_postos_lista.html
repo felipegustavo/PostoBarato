@@ -31,7 +31,7 @@
                       <img src="{{ url_for('static', filename='images/bandeiras/pequenas/pump.png') }}">
                       {% endif %}
                     </td>
-                    <td>{{p.nome}}</td>                  
+                    <td>{{p.nome}} - <a href="{{url_for('mod_rota.rota')}}?nome={{p.nome}}&lat={{p.lat}}&lng={{p.lng}}">(ver rota)</a></td>                  
                     <td class="gasolina"><b>{{p.Gasolina}}</b></td>
                     <td class="alcool"><b>{{p.Alcool}}</b></td>
                     <td class="diesel"><b>{{p.Diesel}}</b></td>

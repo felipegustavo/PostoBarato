@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="right_col" role="main" >
+  <div class="">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2>Rota para {{nome}}</h2>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+            <section class="content invoice">
+              <div id="mapa2"></div>
+              <div id="trajeto"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAvBCPAwvz_aUKAR3vvUGYQ79rg-SW81j4&sensor=false"></script>
+<script type="text/javascript">
+
+var map;
+var directionsDisplay;
+var pontoPadrao;
+var directionsService = new google.maps.DirectionsService();
+
+function initialize() {
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  var latlng = new google.maps.LatLng(-18.8800397, -47.05878999999999);
+  
+    var options = {
+      zoom: 5,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+  map = new google.maps.Map(document.getElementById("mapa2"), options);
+  directionsDisplay.setMap(map);
+  directionsDisplay.setPanel(document.getElementById("trajeto"));
+  
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+
+      pontoPadrao = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      map.setCenter(pontoPadrao);
+      
+      var geocoder = new google.maps.Geocoder();
+      
+      geocoder.geocode({
+        "location": new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+            function(results, status) {}
+        });
+      
+        var request = {
+          origin: pontoPadrao,
+          destination: new google.maps.LatLng({{lat}}, {{lng}}),
+          travelMode: google.maps.TravelMode.DRIVING
+        };
+        
+        directionsService.route(request, function(result, status) {
+          if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(result);
+          }
+        });
+
+    });
+  }
+}
+
+initialize();
+  
+</script>
+{% endblock %}

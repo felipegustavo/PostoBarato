@@ -22,3 +22,6 @@ app.register_blueprint(mod_postos)
 
 from postobarato.views.estatisticas import mod_estatisticas
 app.register_blueprint(mod_estatisticas)
+
+from postobarato.views.rota import mod_rota
+app.register_blueprint(mod_rota)
