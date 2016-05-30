@@ -11,7 +11,6 @@
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
                         <select id="local" name="local" class="form-control" required="true">
-                          <option value="Brasil">Brasil</option>
                           {% for capital in capitais %}
                           <option value="{{ capital.id }}">{{ capital.rotulo }}</option>
                           {% endfor %}
@@ -33,12 +32,13 @@
               </div>
             </div>
 
+            {% for p in statistics['resumos'][:1] %}
             <div class="row top_tiles">
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-sort-numeric-asc"></i>
-                  </div>
-                  <div class="count">R$3,255</div>
+                  </div>                  
+                  <div class="count">R${{ p['produtos'][0]['preco_medio'] }}</div>
                   <h3>Média</h3>
                 </div>
               </div>
@@ -46,7 +46,7 @@
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-line-chart"></i>
                   </div>
-                  <div class="count">R$0,245</div>
+                  <div class="count">R${{ p['produtos'][0]['desvio_padrao'] }}</div>
                   <h3>Desvio</h3>
                 </div>
               </div>
@@ -54,7 +54,7 @@
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-level-down"></i>
                   </div>
-                  <div class="count">R$2,419</div>
+                  <div class="count">R${{ p['produtos'][0]['preco_minimo'] }}</div>
                   <h3>Mínimo</h3>
                 </div>
               </div>
@@ -62,17 +62,18 @@
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-level-up"></i>
                   </div>
-                  <div class="count">R$4,519</div>
+                  <div class="count">R${{ p['produtos'][0]['preco_maximo'] }}</div>
                   <h3>Máximo</h3>
                 </div>
               </div>
             </div>
+            {% endfor %}
 
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Histórico dos preços</h2>
+                    <h2>Preço mínimo/máximo nos últimos 6 meses</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -84,7 +85,7 @@
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Histograma de distribuição dos preços</h2>
+                    <h2>Preço médio nos últimos 6 meses</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -103,12 +104,13 @@
               </div>
             </div>
 
+            {% for p in statistics['resumos'][:1] %}
             <div class="row top_tiles">
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-sort-numeric-asc"></i>
-                  </div>
-                  <div class="count">R$3,255</div>
+                  </div>                  
+                  <div class="count">R${{ p['produtos'][2]['preco_medio'] }}</div>
                   <h3>Média</h3>
                 </div>
               </div>
@@ -116,7 +118,7 @@
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-line-chart"></i>
                   </div>
-                  <div class="count">R$0,245</div>
+                  <div class="count">R${{ p['produtos'][2]['desvio_padrao'] }}</div>
                   <h3>Desvio</h3>
                 </div>
               </div>
@@ -124,7 +126,7 @@
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-level-down"></i>
                   </div>
-                  <div class="count">R$2,419</div>
+                  <div class="count">R${{ p['produtos'][2]['preco_minimo'] }}</div>
                   <h3>Mínimo</h3>
                 </div>
               </div>
@@ -132,17 +134,18 @@
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-level-up"></i>
                   </div>
-                  <div class="count">R$4,519</div>
+                  <div class="count">R${{ p['produtos'][2]['preco_maximo'] }}</div>
                   <h3>Máximo</h3>
                 </div>
               </div>
             </div>
+            {% endfor %}
 
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Histórico dos preços</h2>
+                    <h2>Preço mínimo/máximo nos últimos 6 meses</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -154,7 +157,7 @@
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Histograma de distribuição dos preços</h2>
+                    <h2>Preço médio dos últimos 6 meses</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -173,12 +176,13 @@
               </div>
             </div>
 
+            {% for p in statistics['resumos'][:1] %}
             <div class="row top_tiles">
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-sort-numeric-asc"></i>
-                  </div>
-                  <div class="count">R$3,255</div>
+                  </div>                  
+                  <div class="count">R${{ p['produtos'][1]['preco_medio'] }}</div>
                   <h3>Média</h3>
                 </div>
               </div>
@@ -186,7 +190,7 @@
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-line-chart"></i>
                   </div>
-                  <div class="count">R$0,245</div>
+                  <div class="count">R${{ p['produtos'][1]['desvio_padrao'] }}</div>
                   <h3>Desvio</h3>
                 </div>
               </div>
@@ -194,7 +198,7 @@
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-level-down"></i>
                   </div>
-                  <div class="count">R$2,419</div>
+                  <div class="count">R${{ p['produtos'][1]['preco_minimo'] }}</div>
                   <h3>Mínimo</h3>
                 </div>
               </div>
@@ -202,17 +206,18 @@
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-level-up"></i>
                   </div>
-                  <div class="count">R$4,519</div>
+                  <div class="count">R${{ p['produtos'][1]['preco_maximo'] }}</div>
                   <h3>Máximo</h3>
                 </div>
               </div>
             </div>
+            {% endfor %}
 
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Histórico dos preços</h2>
+                    <h2>Preço mínimo/máximo nos últimos 6 meses</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -224,7 +229,7 @@
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Histograma de distribuição dos preços</h2>
+                    <h2>Preço médio dos últimos 6 meses</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -247,14 +252,28 @@
         enabled: false
       };
 
+      // GASOLINA
+
+      var labels_gasolina = []
+      var preco_medio_gasolina = []
+      var preco_minimo_gasolina = []
+      var preco_maximo_gasolina = []
+
+      {% for p in statistics['resumos'] %}
+        labels_gasolina.push( "{{ p['periodo'] }}" );
+        preco_medio_gasolina.push( "{{ p['produtos'][0]['preco_medio'] }}" );
+        preco_minimo_gasolina.push( "{{ p['produtos'][0]['preco_minimo'] }}" );
+        preco_maximo_gasolina.push( "{{ p['produtos'][0]['preco_maximo'] }}" );
+      {% endfor %}
+
       // Line chart gasolina
       var ctx = document.getElementById("gasolina-lineChart");
       var lineChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          labels: labels_gasolina.reverse(),
           datasets: [{
-            label: "My First dataset",
+            label: "Preço máximo - R$",
             backgroundColor: "rgba(38, 185, 154, 0.31)",
             borderColor: "rgba(38, 185, 154, 0.7)",
             pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -262,9 +281,9 @@
             pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "rgba(220,220,220,1)",
             pointBorderWidth: 1,
-            data: [31, 74, 6, 39, 20, 85, 7]
+            data: preco_maximo_gasolina.reverse()
           }, {
-            label: "My Second dataset",
+            label: "Preço mínimo - R$",
             backgroundColor: "rgba(3, 88, 106, 0.3)",
             borderColor: "rgba(3, 88, 106, 0.70)",
             pointBorderColor: "rgba(3, 88, 106, 0.70)",
@@ -272,7 +291,7 @@
             pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "rgba(151,187,205,1)",
             pointBorderWidth: 1,
-            data: [82, 23, 66, 9, 99, 4, 2]
+            data: preco_minimo_gasolina.reverse()
           }]
         },
       });
@@ -282,19 +301,11 @@
       var mybarChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          labels: labels_gasolina.reverse(),
           datasets: [{
-            label: 'Gasolina',
+            label: 'R$',
             backgroundColor: "#F95757",
-            data: [51, 30, 40, 28, 92, 50, 45]
-          }, {
-            label: 'Álcool',
-            backgroundColor: "#1BC81B",
-            data: [41, 56, 25, 48, 72, 34, 12]
-          }, {
-            label: 'Diesel',
-            backgroundColor: "#F90",
-            data: [41, 56, 25, 48, 72, 34, 12]
+            data: preco_medio_gasolina.reverse()
           }]
         },
 
@@ -308,15 +319,29 @@
           }
         }
       });
+
+      // ÁLCOOL
+
+      var labels_alcool = []
+      var preco_medio_alcool = []
+      var preco_maximo_alcool = []
+      var preco_minimo_alcool = []
+
+      {% for p in statistics['resumos'] %}
+        labels_alcool.push( "{{ p['periodo'] }}" );
+        preco_medio_alcool.push( "{{ p['produtos'][2]['preco_medio'] }}" );
+        preco_minimo_alcool.push( "{{ p['produtos'][2]['preco_minimo'] }}" );
+        preco_maximo_alcool.push( "{{ p['produtos'][2]['preco_maximo'] }}" );
+      {% endfor %}
 
       // Line chart alcool
       var ctx = document.getElementById("alcool-lineChart");
       var lineChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          labels: labels_alcool.reverse(),
           datasets: [{
-            label: "My First dataset",
+            label: "Preço máximo - R$",
             backgroundColor: "rgba(38, 185, 154, 0.31)",
             borderColor: "rgba(38, 185, 154, 0.7)",
             pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -324,9 +349,9 @@
             pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "rgba(220,220,220,1)",
             pointBorderWidth: 1,
-            data: [31, 74, 6, 39, 20, 85, 7]
+            data: preco_maximo_alcool.reverse()
           }, {
-            label: "My Second dataset",
+            label: "Preço mínimo - R$",
             backgroundColor: "rgba(3, 88, 106, 0.3)",
             borderColor: "rgba(3, 88, 106, 0.70)",
             pointBorderColor: "rgba(3, 88, 106, 0.70)",
@@ -334,29 +359,22 @@
             pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "rgba(151,187,205,1)",
             pointBorderWidth: 1,
-            data: [82, 23, 66, 9, 99, 4, 2]
+            data: preco_minimo_alcool.reverse()
           }]
         },
       });
 
       // Bar chart alcool
       var ctx = document.getElementById("alcool-mybarChart");
+
       var mybarChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          labels: labels_alcool.reverse(),
           datasets: [{
-            label: 'Gasolina',
-            backgroundColor: "#F95757",
-            data: [51, 30, 40, 28, 92, 50, 45]
-          }, {
-            label: 'Álcool',
+            label: 'R$',
             backgroundColor: "#1BC81B",
-            data: [41, 56, 25, 48, 72, 34, 12]
-          }, {
-            label: 'Diesel',
-            backgroundColor: "#F90",
-            data: [41, 56, 25, 48, 72, 34, 12]
+            data: preco_medio_alcool.reverse()
           }]
         },
 
@@ -371,14 +389,27 @@
         }
       });
 
+      // DIESEL
+      var labels_diesel = []
+      var preco_medio_diesel = []
+      var preco_maximo_diesel = []
+      var preco_minimo_diesel = []
+
+      {% for p in statistics['resumos'] %}
+        labels_diesel.push( "{{ p['periodo'] }}" );
+        preco_medio_diesel.push( "{{ p['produtos'][1]['preco_medio'] }}" );
+        preco_minimo_diesel.push( "{{ p['produtos'][1]['preco_minimo'] }}" );
+        preco_maximo_diesel.push( "{{ p['produtos'][1]['preco_maximo'] }}" );
+      {% endfor %}
+
       // Line chart diesel
       var ctx = document.getElementById("diesel-lineChart");
       var lineChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          labels: labels_diesel.reverse(),
           datasets: [{
-            label: "My First dataset",
+            label: "Preço máximo - R$",
             backgroundColor: "rgba(38, 185, 154, 0.31)",
             borderColor: "rgba(38, 185, 154, 0.7)",
             pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -386,9 +417,9 @@
             pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "rgba(220,220,220,1)",
             pointBorderWidth: 1,
-            data: [31, 74, 6, 39, 20, 85, 7]
+            data: preco_maximo_diesel.reverse()
           }, {
-            label: "My Second dataset",
+            label: "Preço mínimo - R$",
             backgroundColor: "rgba(3, 88, 106, 0.3)",
             borderColor: "rgba(3, 88, 106, 0.70)",
             pointBorderColor: "rgba(3, 88, 106, 0.70)",
@@ -396,29 +427,22 @@
             pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "rgba(151,187,205,1)",
             pointBorderWidth: 1,
-            data: [82, 23, 66, 9, 99, 4, 2]
+            data: preco_minimo_diesel.reverse()
           }]
         },
       });
 
       // Bar chart diesel
       var ctx = document.getElementById("diesel-mybarChart");
+
       var mybarChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+          labels: labels_diesel.reverse(),
           datasets: [{
-            label: 'Gasolina',
-            backgroundColor: "#F95757",
-            data: [51, 30, 40, 28, 92, 50, 45]
-          }, {
-            label: 'Álcool',
-            backgroundColor: "#1BC81B",
-            data: [41, 56, 25, 48, 72, 34, 12]
-          }, {
-            label: 'Diesel',
+            label: 'R$',
             backgroundColor: "#F90",
-            data: [41, 56, 25, 48, 72, 34, 12]
+            data: preco_medio_diesel.reverse()
           }]
         },
 
