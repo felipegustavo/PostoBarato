@@ -31,6 +31,82 @@
 		{
 			"id":"vitoria",
 			"rotulo":"Vitória - Espírito Santo"
+		},
+		{
+			"id": "goiania",
+			"rotulo": "Goiânia - Goiás"
+		},
+		{
+			"id": "sao_luis",
+			"rotulo": "São Luís - Maranhão"
+		},
+		{
+			"id": "cuiaba",
+			"rotulo": "Cuiabá - Mato Grosso"
+		},
+		{
+			"id": "campo_grande",
+			"rotulo": "Campo Grande - Mato Grosso do Sul"
+		},
+		{
+			"id": "belo_horizonte",
+			"rotulo": "Belo Horizonte - Minas Gerais"
+		},
+		{
+			"id": "belem",
+			"rotulo": "Belém - Pará"
+		},
+		{
+			"id": "joao_pessoa",
+			"rotulo": "João Pessoa - Paraíba"
+		},
+		{
+			"id": "curitiba",
+			"rotulo": "Curitiba - Paraná"
+		},
+		{
+			"id": "recife",
+			"rotulo": "Recife - Pernambuco"
+		},
+		{
+			"id": "teresina",
+			"rotulo": "Teresina - Piauí"
+		},
+		{
+			"id": "rio_de_janeiro",
+			"rotulo": "Rio de Janeiro - Rio de Janeiro"
+		},
+		{
+			"id": "natal",
+			"rotulo": "Natal - Rio Grande do Norte"
+		},
+		{
+			"id": "porto_alegre",
+			"rotulo": "Porto Alegre - Rio Grande do Sul"
+		},
+		{
+			"id": "porto_velho",
+			"rotulo": "Porto Velho - Rondônia"
+		},
+		{
+			"id": "boa_vista",
+			"rotulo": "Boa Vista - Roraima"
+		},
+		{
+			"id": "florianopolis",
+			"rotulo": "Florianópolis - Santa Catarina"
+		},
+		{
+			"id": "sao_paulo",
+			"rotulo": "São Paulo - São Paulo"
+		},
+		{
+			"id": "aracaju",
+			"rotulo": "Aracaju - Sergipe"
+		},
+		{
+			"id": "palmas",
+			"rotulo": "Palmas - Tocantins"
 		}
 	]
 }
