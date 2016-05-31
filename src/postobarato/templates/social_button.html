@@ -9,19 +9,22 @@
                 </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter" data-placement="left">
-                      <i class="fa fa-twitter"></i>
-                    </a>
+                    <script type="text/javascript">
+                      var url = window.location.href;
+                      document.write("<a data-original-title=\"Twitter+\" rel=\"tooltip\" href=\"https://twitter.com/share\" target=\"_blank\" class=\"btn btn-twitter\" data-url=\"" + url + "\" data-lang=\"pt\" data-placement=\"left\"><i class=\"fa fa-twitter\"></i></a>");
+                    </script>
                   </li>
                   <li>
-                    <a data-original-title="Facebook" rel="tooltip"  href="#" class="btn btn-facebook" data-placement="left">
-                      <i class="fa fa-facebook"></i>
-                    </a>
-                  </li>         
+                    <script type="text/javascript">
+                      var url = window.location.href;
+                      document.write("<a data-original-title=\"Facebook+\" rel=\"tooltip\" href=\"https://www.facebook.com/sharer/sharer.php?u=" + url + "\" target=\"_blank\" class=\"btn btn-facebook\" data-placement=\"left\"><i class=\"fa fa-facebook\"></i></a>");
+                    </script>
+                  </li>
                   <li>
-                    <a data-original-title="Google+" rel="tooltip"  href="#" class="btn btn-google" data-placement="left">
-                      <i class="fa fa-google-plus"></i>
-                    </a>
+                    <script type="text/javascript">
+                      var url = window.location.href;
+                      document.write("<a data-original-title=\"Google+\" rel=\"tooltip\" href=\"https://plus.google.com/share?url=" + url + "\" target=\"_blank\" class=\"btn btn-google\" data-placement=\"left\"><i class=\"fa fa-google-plus\"></i></a>");
+                    </script>
                   </li>
                 </ul>
               </div>
