@@ -5,12 +5,27 @@
 			"produtos":[
 				{
 					"nome":"Gasolina",
+					"numero_postos":1081,
+					"preco_medio":3.637,
+					"desvio_padrao":0.131,
+					"preco_minimo":3.339,
+					"preco_maximo":4.125
 				},
 				{
 					"nome":"Álcool",
+					"numero_postos":1086,
+					"preco_medio":2.627,
+					"desvio_padrao":0.152,
+					"preco_minimo":2.199,
+					"preco_maximo":3.099
 				},
 				{
 					"nome":"Diesel",
+					"numero_postos":686,
+					"preco_medio":2.866,
+					"desvio_padrao":0.095,
+					"preco_minimo":2.539,
+					"preco_maximo":3.164
 				}
 			]
 		},
@@ -19,12 +34,27 @@
 			"produtos":[
 				{
 					"nome":"Gasolina",
+					"numero_postos":1436,
+					"preco_medio":3.673,
+					"desvio_padrao":0.129,
+					"preco_minimo":3.349,
+					"preco_maximo":4.125
 				},
 				{
 					"nome":"Álcool",
+					"numero_postos":1448,
+					"preco_medio":2.799,
+					"desvio_padrao":0.144,
+					"preco_minimo":2.38,
+					"preco_maximo":3.26
 				},
 				{
 					"nome":"Diesel",
+					"numero_postos":914,
+					"preco_medio":2.866,
+					"desvio_padrao":0.093,
+					"preco_minimo":2.649,
+					"preco_maximo":3.164
 				}
 			]
 		},
@@ -33,12 +63,27 @@
 			"produtos":[
 				{
 					"nome":"Gasolina",
+					"numero_postos":1701,
+					"preco_medio":3.677,
+					"desvio_padrao":0.134,
+					"preco_minimo":3.349,
+					"preco_maximo":4.03
 				},
 				{
 					"nome":"Álcool",
+					"numero_postos":1730,
+					"preco_medio":2.866,
+					"desvio_padrao":0.122,
+					"preco_minimo":2.379,
+					"preco_maximo":3.26
 				},
 				{
 					"nome":"Diesel",
+					"numero_postos":1079,
+					"preco_medio":2.877,
+					"desvio_padrao":0.095,
+					"preco_minimo":2.649,
+					"preco_maximo":3.213
 				}
 			]
 		},
@@ -47,12 +92,27 @@
 			"produtos":[
 				{
 					"nome":"Gasolina",
+					"numero_postos":1512,
+					"preco_medio":3.641,
+					"desvio_padrao":0.139,
+					"preco_minimo":3.349,
+					"preco_maximo":4.016
 				},
 				{
 					"nome":"Álcool",
+					"numero_postos":809,
+					"preco_medio":2.987,
+					"desvio_padrao":0.149,
+					"preco_minimo":2.699,
+					"preco_maximo":3.59
 				},
 				{
 					"nome":"Diesel",
+					"numero_postos":994,
+					"preco_medio":2.871,
+					"desvio_padrao":0.093,
+					"preco_minimo":2.649,
+					"preco_maximo":3.213
 				}
 			]
 		},
@@ -61,12 +121,27 @@
 			"produtos":[
 				{
 					"nome":"Gasolina",
+					"numero_postos":1428,
+					"preco_medio":3.613,
+					"desvio_padrao":0.129,
+					"preco_minimo":3.25,
+					"preco_maximo":4.016
 				},
 				{
 					"nome":"Álcool",
+					"numero_postos":712,
+					"preco_medio":2.859,
+					"desvio_padrao":0.161,
+					"preco_minimo":2.519,
+					"preco_maximo":3.499
 				},
 				{
 					"nome":"Diesel",
+					"numero_postos":941,
+					"preco_medio":2.861,
+					"desvio_padrao":0.093,
+					"preco_minimo":2.649,
+					"preco_maximo":3.213
 				}
 			]
 		},
@@ -75,12 +150,27 @@
 			"produtos":[
 				{
 					"nome":"Gasolina",
+					"numero_postos":1536,
+					"preco_medio":3.59,
+					"desvio_padrao":0.124,
+					"preco_minimo":3.25,
+					"preco_maximo":3.961
 				},
 				{
 					"nome":"Álcool",
+					"numero_postos":1550,
+					"preco_medio":2.653,
+					"desvio_padrao":0.106,
+					"preco_minimo":2.299,
+					"preco_maximo":3.03
 				},
 				{
 					"nome":"Diesel",
+					"numero_postos":969,
+					"preco_medio":2.851,
+					"desvio_padrao":0.088,
+					"preco_minimo":2.599,
+					"preco_maximo":3.164
 				}
 			]
 		}
